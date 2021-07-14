@@ -1,0 +1,44 @@
+.contact {
+  margin-bottom: 80px;
+}
+
+.contact__heading {
+  margin-bottom: 24px;
+}
+
+// TABLET
+
+@media screen and (min-width: $media-tablet) {
+  .contact {
+    margin-bottom: 96px;
+  }
+
+  .contact__heading {
+    margin-bottom: 32px;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: $media-desktop) {
+  .contact {
+    margin-bottom: 110px;
+  }
+
+  .contact__heading {
+    width: 350px;
+    flex-shrink: 0;
+    margin-right: 125px;
+    margin-bottom: 0;
+  }
+
+  .contact__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }  
+
+  .contact__form {
+    flex-grow: 1;
+  }
+}

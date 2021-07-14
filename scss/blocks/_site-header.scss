@@ -1,0 +1,29 @@
+.site-header {
+  position: relative;
+  overflow-x: clip;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// TABLET
+
+@media screen and (min-width: 500px) {
+  .site-header {
+    padding-top: 64px;
+    padding-bottom: 47px;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: $media-desktop) {
+  .site-header {
+    padding-bottom: 54px;
+  }
+}

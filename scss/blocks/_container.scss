@@ -3,3 +3,11 @@
   margin: 0 auto;
   padding: 0 $container-padding;
 }
+
+@media screen and (min-width: $media-tablet) {
+  $container-padding: 40px;
+}
+
+@media screen and (min-width: $media-desktop) {
+  $container-padding: 30px;
+}

@@ -1,0 +1,51 @@
+.cta {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.cta__heading {
+  margin-bottom: 40px;
+}
+
+// TABLET
+
+@media screen and (min-width: $media-tablet) {
+  .cta {
+    margin-bottom: 96px;
+    text-align: left;
+  }
+
+  .cta__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta__heading {
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .cta__inner::after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    order: 2;
+    margin: 0 32px;
+    background-color: rgba(51, 50, 61, 0.15);
+  }
+
+  .cta__btn {
+    order: 3;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: $media-desktop) {
+  .cta {
+    margin-bottom: 150px;
+  }
+}

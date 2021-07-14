@@ -1,0 +1,39 @@
+.footer-nav {
+  margin-bottom: 40px;
+}
+
+.footer-nav__list {
+  @include list-reset;
+}
+
+.footer-nav__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer-nav__link.sitenav__link {
+  color: #fff;
+  transition: color 0.3s ease;
+  transition-property: color, opacity;
+
+  &:hover {
+    color: $color-grey-light;
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 650px) {
+  .footer-nav {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .footer-nav__list {
+    display: flex;
+  }
+
+  .footer-nav__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 42px;
+  }
+}

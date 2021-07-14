@@ -1,0 +1,21 @@
+.heading {
+  margin: 0;
+  font-family: $font-stack-secondary;
+  color: $color-text-primary;
+
+  &--primary,
+  &--secondary {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+  }
+}
+
+@media screen and (min-width: $media-desktop) {
+  .heading--primary {
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.45px;
+  }
+}

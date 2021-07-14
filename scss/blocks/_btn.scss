@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  padding: 17px 34px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--light {
+    color: $color-text-primary;
+    background-color: transparent;
+    border: 1px solid $color-text-primary;
+
+    &:hover {
+      color: #fafafa;
+      background-color: $color-text-primary;
+    }
+  }
+
+  &--dark {
+    color: #fff;
+    background-color: #203a4c;
+    border: 1px solid #203a4c;
+
+    &:hover {
+      color: #203a4c;
+      background-color: transparent;
+    }
+  }
+}

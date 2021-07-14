@@ -1,0 +1,27 @@
+.social__list {
+  display: flex;
+  align-items: center;
+
+  @include list-reset;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social__link {
+  display: flex;
+  color: #fff;
+  transition: color 0.3s ease;
+  transition-property: color, opacity;
+
+  &:hover {
+    color: $color-grey-light;
+  }
+  
+  &:active {
+    opacity: 0.6;
+  }
+
+}
+
